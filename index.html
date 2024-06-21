@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Baby Names</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Baby Names</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                
+            </div>
+        </div>
+    </header>
+    <div class="hero-section">
+        <img src="images/img1.png" alt="Happy Naming!" class="hero-image">
+        <div class="hero-text">
+            <h1>Happy Naming!</h1>
+            <p>For the perfect baby girl or baby boy name, check out our fun resources.</p>
+            <input type="text" id="hero-search-input" placeholder="Type your baby name here...">
+            <select id="hero-gender-select">
+                <option value="all">All</option>
+                <option value="boy">Boy</option>
+                <option value="girl">Girl</option>
+            </select>
+            <button onclick="filterNames()">Search</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for baby names...">
+            <select id="gender-select">
+                <option value="all">All</option>
+                <option value="boy">Boy</option>
+                <option value="girl">Girl</option>
+            </select>
+            <button onclick="filterNames()">Search</button>
+        </div>
+        <div id="names-list"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Oh Baby Names. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
